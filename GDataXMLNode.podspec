@@ -9,20 +9,12 @@ Pod::Spec.new do |s|
   s.author                = { " tim" => "491590253@qq.com" }
   s.source                = { :git => "https://github.com/tpctt/GDataXMLNode.git",:tag => s.version.to_s  }
   s.ios.deployment_target = "6.0"
-  s.requires_arc          = true
-  s.framework             = "CoreFoundation","Foundation","libxml2"
-  s.library		= "z.1.1.3","stdc++","sqlite3"
+  s.requires_arc          = false
+  s.framework             = "CoreFoundation","Foundation"
+  s.library		= "xml2"
   s.source_files = 'Classess/**/*.{h,m,mm}'
-  #s.resources = 'SIDADView/*.{bundle}'
-
-
-#  s.subspec 'YMCitySelect' do |sp|
-#   sp.source_files = 'YMCitySelect/*.{h,m,mm}'
-  #  sp.resources   = "Extend/**/*.{png}"
-#   sp.requires_arc = true
-#   sp.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libz, $(SDKROOT)/usr/include/libxml2', 'CLANG_CXX_LANGUAGE_STANDARD' => 'gnu++0x', 'CLANG_CXX_LIBRARY' => 'libstdc++', 'CLANG_WARN_DIRECT_OBJC_ISA_USAGE' => 'YES'}
-   
-  #  sp.dependency 'FontIcon'
-   # sp.prefix_header_contents = '#import "EasyIOS.h"'
-#  end
+  s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2' }  
+  # s.xcconfig = { 'HEADER_SEARCH_PATHS' => 'iphoneos/usr/include/libxml2' }  
+  
+  
 end
