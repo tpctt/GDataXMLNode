@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
-  s.name                  = "GDataXMLNode"
-  s.version               = "2.0.0"
-  s.summary               = "将 Google 的 xml node 解析改成了 pod 管理, 有问题请 issue"
+  s.name                  = "GDataXMLNode2"
+  s.version               = "2.0.1"
+  s.summary               = "GDataXMLNode2 将 Google 的 xml node 解析改成了 pod 管理, 有问题请 issue"
   s.homepage              = "https://github.com/tpctt/GDataXMLNode"
   s.social_media_url      = "https://github.com/tpctt/GDataXMLNode"
   s.platform     = :ios,'6.0'
